@@ -3,7 +3,7 @@
 document.getElementById("btn").addEventListener("click",func);
 
 function func(){
-    console.log("got");
+    console.log("Transforming Data with Promise Chaining");
 		let val=document.querySelector("#ip").value;
 	
 	function prom1(val1){
