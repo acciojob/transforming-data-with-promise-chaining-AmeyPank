@@ -1,4 +1,3 @@
-//your JS code here. If required.
 
 //your JS code here. If required.
 document.getElementById("btn").addEventListener("click",func);
