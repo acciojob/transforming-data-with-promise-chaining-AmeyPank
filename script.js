@@ -9,7 +9,7 @@ function func(){
 	function promise1(val1){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
-				resolve(val1);ise
+				resolve(val1);
 			},2000)
 		})
 	}
