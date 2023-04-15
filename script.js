@@ -6,21 +6,21 @@ function func(){
     console.log("Transforming Data with Promise Chaining");
 		let val=document.querySelector("#ip").value;
 	
-	function prom1(val1){
+	function promise1(val1){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
-				resolve(val1);
+				resolve(val1);ise
 			},2000)
 		})
 	}
-	function prom2(val2){
+	function promise2(val2){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				resolve(val2);
 			},1000)
 		})
 	}
-	function prom3(val3){
+	function promise3(val3){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				val3=val3*2;
@@ -28,7 +28,7 @@ function func(){
 			},1000)
 		})
 	}
-	function prom4(val4){
+	function promise4(val4){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				val4=val4-3;
@@ -36,7 +36,7 @@ function func(){
 			},1000)
 		})
 	}
-	function prom5(val5){
+	function promise5(val5){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				val5=val5/2;
@@ -44,7 +44,7 @@ function func(){
 			},1000)
 		})
 	}
-	function prom6(val6){
+	function promise6(val6){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				val6=val6+10;
@@ -52,31 +52,31 @@ function func(){
 			},1000)
 		})
 	}
-	function prom7(val7){
+	function promise7(val7){
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				resolve(val7);
 			},1000)
 		})
 	}
-	prom1(val).then((data1)=>{
+	promise1(val).then((data1)=>{
 		document.querySelector("#output").textContent="Result: "+data1;
-		return prom2(data1);
+		return promise2(data1);
 	}).then((data2)=>{
 		document.querySelector("#output").textContent="Result: "+data2;
-		return prom3(data2);
+		return promise3(data2);
 	}).then((data3)=>{
 		document.querySelector("#output").textContent="Result: "+data3;
-		return prom4(data3);
+		return promise4(data3);
 	}).then((data4)=>{
 		document.querySelector("#output").textContent="Result: "+data4;
-		return prom5(data4);
+		return promise5(data4);
 	}).then((data5)=>{
 		document.querySelector("#output").textContent="Result: "+data5;
-		return prom6(data5);
+		return promise6(data5);
 	}).then((data6)=>{
 		document.querySelector("#output").textContent="Result: "+data6;
-		return prom7(data6);
+		return promise7(data6);
 	}).then((data7)=>{
 		document.querySelector("#output").textContent="Final Result: "+data7;
 	}).catch((err)=>{
